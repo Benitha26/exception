@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+                function myfun1(){
+                    var a=parseInt(prompt("enter the number"));
+                    var b=parseInt(prompt("enter the number"));
+                    try{
+                        if(b == 0){
+                            throw new Error("divide by zero");
+                        }
+                    else{
+                        var c=a/b;
+                        alert(c);
+                    }
+                    }
+                    catch(e){
+                        alert(e);
+                    }
+                }
+            </script>
+    </head>
+    <body>
+<input type="button" value="click " onclick="myfun1()">
+    </body>
+</html> 

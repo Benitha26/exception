@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <body>
+        <p>Enter your phone number and then press enter</p>
+        <form action="">
+            <input name="txtphone" onchange="Phonevalidation(this);">
+        </form>
+        <script>
+        var reg=/^[0-9]{10}$/;
+        function Phonevalidation(phonenumber)
+        {
+            var ok=reg.exec(phonenumber.value);
+            if(!ok)
+            alert("phone number isnt valid");
+            else
+            alert("phone number is valid");
+        }
+        </script>
+    </body>
+</html>

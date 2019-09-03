@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function myfunc()
+ {       try
+        {
+            test();
+        }
+        catch(e)
+
+{
+    document.getElementById("errorMsg").innerHTML =e;
+}
+}        </script>
+
+    </head>
+    <body>
+        <p>Exception handling demo:</p>
+        <form>
+            <input type="button" value="click me" onclick="myfunc();"/>
+                    </form>
+                    <div id="errorMsg"></div>
+    </body>
+</html>
